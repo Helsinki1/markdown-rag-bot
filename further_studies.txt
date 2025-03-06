@@ -1,0 +1,3 @@
+Explain each evaluation metric --> context_precision, answer_correctness, A-Score
+
+You've worked with LlamaIndex vector databases before, how is your embedding model diff from last time?

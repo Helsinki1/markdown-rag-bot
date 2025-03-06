@@ -1,7 +1,8 @@
 import os
 import openai
-from llama_index.core import GPTVectorStoreIndex, Settings, PromptTemplate
+from llama_index.core import VectorStoreIndex, Settings, PromptTemplate
 from llama_index.readers.file import MarkdownReader
+from llama_index.core.text_splitter import SentenceSplitter
 from evaluate import evaluateResponse
 import asyncio
 
@@ -10,9 +11,12 @@ from dotenv import load_dotenv
 load_dotenv()
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
+splitter = SentenceSplitter(chunk_size=1024, chunk_overlap=50)
+Settings.text_splitter = splitter
+
 markdown_reader = MarkdownReader()
 documents = markdown_reader.load_data("./document.md") # loads a single document into a list of documents
-index = GPTVectorStoreIndex.from_documents(documents) # store Apple's financial info as vector embeddings
+index = VectorStoreIndex.from_documents(documents, transformations=[splitter]) # store Apple's financial info as vector embeddings
 
 query_engine = index.as_query_engine()
 
@@ -30,15 +34,15 @@ test_queries = [
 ]
 
 correct_ans = [ # answers from Google Gemini's NotebookLM
-    "Updated MacBook Pro 14” and MacBook Pro 16”, powered by the Apple M1 Pro or M1 Max chip, and the third generation of AirPods",
-    "$26.251 billion",
+    "Updated MacBook Pro 14” and MacBook Pro 16”, powered by the Apple M1 Pro or M1 Max chip, and the third generation of AirPods.",
+    "$26.251 billion.",
     "China accounted for $74.200 billion, and other countries accounted for $172.269 billion. More than half of Apple's revenue came from international markets.",
-    "Basic earnings per share were $6.15, and diluted earnings per share were $6.11",
+    "Basic earnings per share were $6.15, and diluted earnings per share were $6.11.",
     "Epic Games filed a lawsuit against Apple alleging antitrust violations related to the App Store.",
-    "Services net sales accounted for $78.129 billion - roughly 20% of Apple's revenue came from its services.",
-    "The COVID-19 pandemic caused disruptions to the supply chain, resulting in component shortages that affected sales worldwide",
+    "Services net sales accounted for roughly 20% of Apple's revenue came from its services.",
+    "The COVID-19 pandemic caused disruptions to the supply chain, resulting in component shortages that affected sales worldwide.",
     "There is no explicit mention of significant leadership changes in the filing.",
-    "The document indicates that Apple has historically experienced higher net sales in its first quarter compared to other quarters due to seasonal holiday demand",
+    "The document indicates that Apple has historically experienced higher net sales in its first quarter compared to other quarters due to seasonal holiday demand.",
     "The document does not specify the exact number of employees or the number of full-time employees Apple had in 2022.",
 ]
 
@@ -69,6 +73,7 @@ for i in range(10):
         
     print("LLM Response:", response)
     print("Context: ", context)
+    print("Correct Ans:" correct_ans[i])
 
     asyncio.run( 
         evaluateResponse(

@@ -1,86 +1,94 @@
 LLM Response: The new products and services announced in the first quarter of 2022 were the updated MacBook Pro 14” and MacBook Pro 16” powered by the Apple M1 Pro or M1 Max chip, and the third generation of AirPods.
 Context:  The new products and services announced in the first quarter of 2022 were the updated MacBook Pro 14” and MacBook Pro 16” powered by the Apple M1 Pro or M1 Max chip, and the third generation of AirPods.
+Correct Ans: Updated MacBook Pro 14” and MacBook Pro 16”, powered by the Apple M1 Pro or M1 Max chip, and the third generation of AirPods.
 
 Evaluation Scores: 
 	context_precision answer_correctness
-	1.0               0.984614
-	
+	1.0           0.984614
+
 Single Turn A-Score:  1
 
 
 
-LLM Response: I'm sorry, but without the specific information on the amount of money Apple spent on Research and Development in 2022, I am unable to provide an accurate answer to your question.
-Context:  The information provided does not specify the exact amount of money Apple spent on Research and Development in 2022.
+LLM Response: I'm sorry, but without specific information provided on how much money Apple spent on Research and Development in 2022, I am unable to provide an accurate answer to your question.
+Context:  The context information does not provide specific details on how much money Apple spent on Research and Development in 2022.
+Correct Ans: $26.251 billion.
 
 Evaluation Scores: 
 	context_precision answer_correctness
-	0.0               0.19515
+	0.0               0.194343
+
+Single Turn A-Score:  1
+
+
+
+LLM Response: In 2022, Apple's revenue from international markets accounted for approximately 58%.
+Context:  Apple's revenue from international markets accounted for approximately 58% in 2022, 59% in 2021, and 60% in 2020.
+Correct Ans: China accounted for $74.200 billion, and other countries accounted for $172.269 billion. More than half of Apple's revenue came from international markets.
+
+Evaluation Scores: 
+	context_precision answer_correctness
+	1.0               0.976186
+
+Single Turn A-Score:  1
+
+
+
+LLM Response: Apple's earnings per share for 2022 was $5.36.
+Context:  Apple's earnings per share for 2022 was $5.36.
+Correct Ans: Basic earnings per share were $6.15, and diluted earnings per share were $6.11.
+
+Evaluation Scores: 
+	context_precision answer_correctness
+	0.0               0.218302
 
 Single Turn A-Score:  0
 
 
 
-LLM Response: Approximately 60% of Apple's revenue came from international markets.
-Context:  Approximately 60% of Apple's revenue came from international markets.
+LLM Response: Apple is facing antitrust investigations in multiple jurisdictions related to its business practices, particularly concerning its App Store terms and conditions. Additionally, the company is involved in litigation regarding patent infringement and intellectual property rights violations, both in the U.S. and internationally. These legal matters have the potential to result in significant fines, changes to business practices, and adverse impacts on Apple's business, financial condition, and reputation.
+Context:  Apple is facing various legal challenges and lawsuits, including antitrust investigations in multiple jurisdictions related to its business practices, particularly concerning its App Store terms and conditions. Additionally, the company is involved in litigation regarding patent infringement and intellectual property rights violations, both in the U.S. and internationally. These legal matters have the potential to result in significant fines, changes to business practices, and adverse impacts on Apple's business, financial condition, and reputation.
+Correct Ans: Epic Games filed a lawsuit against Apple alleging antitrust violations related to the App Store.
 
 Evaluation Scores: 
 	context_precision answer_correctness
-	1.0               0.60393
+	1.0               0.50198
 
 Single Turn A-Score:  1
 
 
 
-LLM Response: To calculate Apple's earnings per share for 2022, we would need to know the net income attributable to common shareholders and the weighted average number of common shares outstanding during the fiscal year. Without this specific information, I am unable to provide the exact earnings per share for Apple in 2022.
-Context:  Apple's earnings per share for 2022 can be calculated by dividing the net income attributable to common shareholders by the weighted average number of common shares outstanding during the fiscal year.
+LLM Response: 19.8%
+Context:  Services accounted for 19.8% of Apple's total net sales in 2022.
+Correct Ans: Services net sales accounted for roughly 20% of Apple's revenue came from its services.
 
 Evaluation Scores: 
 	context_precision answer_correctness
-	0.0               0.202733
-
-Single Turn A-Score:  0
-
-
-
-LLM Response: Apple is facing antitrust investigations in various jurisdictions around the world related to its App Store terms and conditions. These investigations could lead to legal proceedings and claims against the company, potentially resulting in significant fines and necessitating changes to its App Store business. Additionally, Apple is subject to litigation concerning the App Store, which has already prompted adjustments to its business practices and may lead to further changes in the future. The company's commercial relationships with other technology firms are also at risk due to investigations and litigation involving those partners, which could negatively impact Apple's business, results of operations, and financial condition.
-Context:  Apple is facing antitrust investigations in various jurisdictions around the world, particularly related to its App Store terms and conditions. These investigations could lead to legal proceedings and claims against the company, potentially resulting in significant fines and necessitating changes to its App Store business. Additionally, Apple is subject to litigation concerning the App Store, which has already prompted adjustments to its business practices and may lead to further changes in the future. Furthermore, the company's commercial relationships with other technology firms are at risk due to investigations and litigation involving those partners, which could negatively impact Apple's business, results of operations, and financial condition.
-
-Evaluation Scores: 
-	context_precision answer_correctness
-	1.0               0.720229
+	1.0               0.77242
 
 Single Turn A-Score:  1
 
 
 
-LLM Response: Approximately 19.8% of Apple's total revenue originated from its services.
-Context:  Services accounted for approximately 19.8% of Apple's total revenue.
+LLM Response: Yes, there were major risks mentioned about Apple's supply chain, including dependence on outsourcing partners located primarily in Asia, potential disruptions in manufacturing or logistics due to various reasons, reliance on single-source outsourcing partners for critical components, and the impact of industrial accidents at suppliers and contract manufacturers.
+Context:  Yes, there were major risks mentioned about Apple's supply chain, including dependence on outsourcing partners located primarily in Asia, potential disruptions in manufacturing or logistics due to various reasons, reliance on single-source outsourcing partners for critical components, and the impact of industrial accidents at suppliers and contract manufacturers.
+Correct Ans: The COVID-19 pandemic caused disruptions to the supply chain, resulting in component shortages that affected sales worldwide.
 
 Evaluation Scores: 
 	context_precision answer_correctness
-	1.0               0.610419
+	0.0               0.459654
 
 Single Turn A-Score:  1
 
 
 
-LLM Response: Yes, there were major risks mentioned about Apple's supply chain, including reliance on single-source outsourcing partners for components and manufacturing, potential disruptions in manufacturing or logistics due to various reasons, such as natural disasters or economic issues, and the impact of industry-wide shortages and pricing fluctuations on the availability of components.
-Context:  Yes, there were major risks mentioned about Apple's supply chain, including reliance on single-source outsourcing partners for components and manufacturing, potential disruptions in manufacturing or logistics due to various reasons, such as natural disasters or economic issues, and the impact of industry-wide shortages and pricing fluctuations on the availability of components.
+LLM Response: Based on the information provided, there is no mention of Apple experiencing any significant changes in leadership.
+Context:  There is no mention of Apple experiencing any significant changes in leadership in the provided context information.
+Correct Ans: There is no explicit mention of significant leadership changes in the filing.
 
 Evaluation Scores: 
 	context_precision answer_correctness
-	0.0               0.831494
-
-Single Turn A-Score:  1
-
-
-
-LLM Response: Based on the provided context information, Apple did not experience any significant changes in leadership.
-Context:  Apple did not experience any significant changes in leadership based on the provided context information.
-
-Evaluation Scores: 
-	context_precision answer_correctness
-	1.0               0.219692
+	1.0               0.725052
 
 Single Turn A-Score:  1
 
@@ -88,20 +96,22 @@ Single Turn A-Score:  1
 
 LLM Response: Apple experienced the most growth in the fourth quarter (Q4).
 Context:  Apple experienced the most growth in the fourth quarter (Q4).
+Correct Ans: The document indicates that Apple has historically experienced higher net sales in its first quarter compared to other quarters due to seasonal holiday demand.
 
 Evaluation Scores: 
 	context_precision answer_correctness
-	0.0               0.473413
+	1.0               0.473413
 
 Single Turn A-Score:  0
 
 
 
-LLM Response: Apple employed approximately 164,000 full-time equivalent employees in 2022.
-Context:  Apple employed approximately 164,000 full-time equivalent employees in 2022.
+LLM Response: Apple employed approximately 160,000 workers in 2022. The majority of these workers were full-time employees.
+Context:  Apple employed approximately 160,000 workers in 2022, with the majority being full-time employees.
+Correct Ans: The document does not specify the exact number of employees or the number of full-time employees Apple had in 2022.
 
 Evaluation Scores: 
 	context_precision answer_correctness
-	1.0               0.220723
+	0.0               0.220351
 
 Single Turn A-Score:  1
