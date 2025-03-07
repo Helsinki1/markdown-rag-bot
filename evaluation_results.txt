@@ -4,7 +4,7 @@ Correct Ans: Updated MacBook Pro 14” and MacBook Pro 16”, powered by the App
 
 Evaluation Scores: 
 	context_precision answer_correctness
-	1.0           0.984614
+	1.0               0.984614
 
 Single Turn A-Score:  1
 
@@ -100,7 +100,7 @@ Correct Ans: The document indicates that Apple has historically experienced high
 
 Evaluation Scores: 
 	context_precision answer_correctness
-	1.0               0.473413
+	0.0               0.473413
 
 Single Turn A-Score:  0
 
